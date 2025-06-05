@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset= "utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Faith App</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Chewy&family=Fredoka+One&family=Carter+One&family=Pacifico&display=swap" rel="stylesheet">
+        <script src="script.js" defer></script>
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+
+
+    </head>
+    <body>
+        <header>
+            
+            <h1>My Faith✨</h1>
+        </header>
+        <main>
+            <section id="welcome">
+                <div class="welcome">
+                <h2>Welcome to My Faith App</h2>
+                <p class="container">Your daily source of inspiration and prayer.</p>
+            </div>
+            <div class="start">
+             <button class="btn" onclick="goToFeatures()">Let's Start</button>
+            </div>                
+            </section>
+            
+            <section id="features">
+                <div class="features">
+                <ul>
+                    <button class="btn" id="todays-verse-btn" onclick="showVerse(verse)">📖 Today’s Verse</button>
+                    <button class="btn" onclick="showInspiration()">💬 Inspiration Board</button>
+                    <button class="btn" onclick="showPrayer()">🙏 Prayer List</button>
+                </ul>
+                <p class="container">Explore our key features to enhance your spiritual journey</p>
+                </div>
+            </section>
+            <!-- HTML -->
+<div id="verse-box" style="display: none;">
+  <div class="verse-content">
+
+    <button class="close-btn" onclick="closeVerse()">×</button>
+    <p id="bible-verse">Discover todays message of hope and faith</p>
+<audio id="verse-sound" src="bell.mp3" preload="auto"></audio>
+
+
+    <button class="button" onclick="showRandomVerse()">Show Bible Verse</button>
+    <button class="button"onclick="copyVerse()">Copy Verse</button>
+    <button class="button" onclick="shareVerse()">Share</button>
+
+    
+  </div>
+</div>
+
+
+
+        </main>
+        <script>
+    function goToFeatures() {
+      document.getElementById('welcome').style.display = 'none';
+      document.getElementById('features').style.display = 'block';
+    }
+
+    
+
+    function showInspiration() {
+      alert("Feature coming soon: Save your favorite quotes & thoughts ✨");
+    }
+
+    function showPrayer() {
+      alert("Feature coming soon: Add your prayer requests 🙏");
+    }
+    function showVerse(verse) {
+  document.getElementById("bible-verse").innerText = verse;
+  document.getElementById("verse-box").style.display = "flex";
+  setTimeout(() => {
+    document.getElementById("verse-box").style.display = "none";
+  }, 10000); // hide after 5 seconds
+}
+
+  </script>
+
+        <footer>
+            <p>&copy; 2025 My Faith App. All rights reserved.</p>
+        </footer>
+</body>
+</html>

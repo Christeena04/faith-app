@@ -1,0 +1,196 @@
+ body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #e0f7fa, #fce4ec);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-image:"images\jesus.png";
+        margin: 0;
+        padding: 0;
+        
+
+    }
+
+   h1{
+    font-family: 'Great Vibes', cursive;
+  font-size: 6em;
+  color:burlywood;
+  text-align: center;
+  margin: 20px 0;
+  -webkit-text-stroke: 0.1px white;
+  animation: fadeIn 3.5s ease-out;
+   }
+
+    .btn {
+      background: burlywood;
+      color: white;
+      padding: 15px 60px;
+      margin: 20px;
+      border: none;
+      border-radius: 20px;
+      font-size: 1.7em;
+      cursor: pointer;
+      transition: 0.3s;
+      font-family: 'Sacramento', cursive;
+    }
+
+    .btn:hover {
+      background:whitesmoke;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.8em;
+      color: #555;
+    }
+   #features {
+    display:none;
+
+   }
+   header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 0;
+  background-color:#fce4ec;
+  background-image:url("https://cdn.pixabay.com/photo/2022/05/31/00/56/sky-7232494_1280.jpg");
+}
+h2{
+    font-family: 'Chewy', cursive;
+    font-size: 3.1rem;
+    color:burlywood;
+    -webkit-text-stroke: 1.1px white;
+    text-align: center;
+    margin-top: 180px;
+    animation: fadeIn 1.5s ease-out;
+}
+.features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 240px;
+    padding: 20px;
+    height: 100vh;
+    width:300vh;
+    background-image:"images\jesus.png";
+    animation: fadeIn 1s ease-out;
+}
+.container{
+  font-family: 'Pacifico', cursive;
+    font-size: 1.5em;
+    text-align: center;
+    color:burlywood;
+    margin-top: 20px;
+    padding: 20px;
+    animation: fadeIn 1.5s ease-out;
+    
+}
+.start{
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+/* CSS */
+#verse-box {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.verse-content {
+  width: 90%;
+  max-width: 600px;
+  padding: 40px;
+  border-radius: 20px;
+  color: #fff;
+  -webkit-text-stroke: 1.1px plum;
+  font-size: 1.6rem;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  text-shadow: 2px 2px 4px black;
+  position: relative;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  background-image:url("images/jesus.png");
+}
+  
+
+.close-btn {
+  position: absolute;
+  top:20px;
+  margin-top: -29px;
+  left: 650px;
+  background: transparent;
+  border: none;
+  font-size: 3rem;
+  color: grey;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes fadeOut {
+  from { opacity: 1; transform: scale(1); }
+  to { opacity: 0; transform: scale(0.9); }
+}
+button{
+  background:white;
+      color: white;
+      padding: 4px 3px;
+      margin-top: 50px;
+      border: none;
+      border-radius: 20px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: 0.3s;
+      font-family:'Patrick Hand', cursive;
+}
+@keyframes popInVerse {
+  0% { opacity: 0; transform: scale(0.5); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+#bible-verse {
+  animation: popInVerse 0.8s ease-out forwards;
+   animation: glowInVerse 1.2s ease-out forwards;
+   font-size: : 1.5rem;
+}
+
+@keyframes glowInVerse {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+    text-shadow: none;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    text-shadow:
+      0 0 8px #fff,
+      0 0 14px #ffd700,
+      0 0 16px #ffa500;
+  }
+}
+.verse-content {
+  border: 5px solid rgba(153, 19, 19, 0.4);
+  box-shadow: 0 0 20px rgba(150, 64, 64, 0.2);
+  backdrop-filter: blur(6px);
+}
