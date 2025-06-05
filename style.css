@@ -7,7 +7,7 @@
       justify-content: center;
       height: 100vh;
       margin: 0;
-      background-image:"jesus.png";
+      background-image:url("jesus.png");
         margin: 0;
         padding: 0;
         
@@ -78,7 +78,7 @@ h2{
     padding: 20px;
     height: 100vh;
     width:300vh;
-    background-image:"jesus.png";
+    background-image:url("jesus.png");
     animation: fadeIn 1s ease-out;
 }
 .container{
