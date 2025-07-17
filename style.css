@@ -18,11 +18,11 @@
 
    h1{
     font-family: 'Great Vibes', cursive;
-  font-size: 6em;
-  color:white;
+  font-size: 5.5em;
+  color:burlywood;
   text-align: center;
   margin: 20px 0;
-  -webkit-text-stroke: 0.001px burlywood;
+  -webkit-text-stroke: 0.0002px white;
   animation: fadeIn 1.5s ease-out;
    }
 .todo-container {
