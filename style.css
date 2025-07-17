@@ -3,7 +3,10 @@
       background: linear-gradient(to bottom, #e0f7fa, #fce4ec);
       
       flex-direction: column;
-      
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
       
       margin: 0;
       background-image:url("jesus2.png");
