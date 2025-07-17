@@ -19,10 +19,10 @@
    h1{
     font-family: 'Great Vibes', cursive;
   font-size: 6em;
-  color:burlywood;
+  color:white;
   text-align: center;
   margin: 20px 0;
-  -webkit-text-stroke: 0.001px white;
+  -webkit-text-stroke: 0.001px burlywood;
   animation: fadeIn 1.5s ease-out;
    }
 .plan{
