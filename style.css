@@ -1,20 +1,16 @@
- body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #e0f7fa, #fce4ec);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      background-image:url("jesus2.png");
-      padding: 0;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed; /* optional */
-  
-    }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #e0f7fa, #fce4ec);
+  background-image: url("jesus2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  display: block; /* remove flex centering to allow natural top alignment */
+}
+
 
    h1{
     font-family: 'Great Vibes', cursive;
@@ -25,23 +21,23 @@
   -webkit-text-stroke: 0.0002px white;
   animation: fadeIn 1.5s ease-out;
    }
-.todo-container {
-  max-width: 400px;
-  margin: 40px auto; /* centers container */
-  background: #fefefe;
-  padding: 30px 20px;
-  border-radius: 20px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-  font-family: 'Patrick Hand', cursive;
-  text-align: center; /* center contents */
+
+
+.daily-heading {
+  font-family: 'Chewy', cursive;
+  font-size: 2.5rem;
+  color: burlywood;
+  -webkit-text-stroke: 1px white;
+  text-align: center;
+  margin: 20px auto 10px;  /* Top margin pushes heading down slightly from top */
 }
 
-.todo-container h2 {
-  font-family: 'Chewy', cursive;
-  font-size: 1.8rem;
-  color: burlywood;
-  margin-bottom: 20px;
+.todo-container {
+  max-width: 400px;
+  margin: 0 auto;        /* Centers container */
+  padding-bottom: 40px;  /* Adds space at bottom */
 }
+
 
 
     .btn {
