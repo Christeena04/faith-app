@@ -59,22 +59,18 @@
 </div>
             <section id="todo-page" style="display:none;">
   <h2 class="daily-heading">📝 Your Daily Plan</h2>
+
   <div class="todo-container">
-    <!-- Input and task list here -->
+    <div class="input-section">
+      <input type="text" id="taskInput" placeholder="Enter your task here">
+      <button class="button" onclick="addTask()">Add Task</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <button class="button" onclick="goBackToFeatures()">⬅️ Back</button>
   </div>
-
-
-
-  <div class="input-section">
-    <input type="text" id="taskInput" placeholder="Enter your task here">
-    <button class="button" onclick="addTask()">Add Task</button>
-  </div>
-
-  <ul id="taskList"></ul>
-
-  <button class="button" onclick="goBackToFeatures()">⬅️ Back</button>
 </section>
-
 
 
 
