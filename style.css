@@ -25,15 +25,24 @@
   -webkit-text-stroke: 0.001px burlywood;
   animation: fadeIn 1.5s ease-out;
    }
-.plan{
- font-family: 'Sacramento', cursive;
-  font-size: 5em;
-  color:black;
-  text-align: center;
-  margin-right:50px 0;
-  -webkit-text-stroke: 0.2px burlywood;
-  animation: fadeIn 1.5s ease-out;
+.todo-container {
+  max-width: 400px;
+  margin: 40px auto; /* centers container */
+  background: #fefefe;
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  font-family: 'Patrick Hand', cursive;
+  text-align: center; /* center contents */
 }
+
+.todo-container h2 {
+  font-family: 'Chewy', cursive;
+  font-size: 1.8rem;
+  color: burlywood;
+  margin-bottom: 20px;
+}
+
 
     .btn {
       background: burlywood;
