@@ -23,7 +23,7 @@
         <main>
             <section id="welcome">
                 <div class="welcome">
-                <h2>Welcome to My Faith Flow</h2>
+                
                 
             </div>
             <div class="start">
@@ -35,7 +35,7 @@
                 <div class="features">
                 <ul>
                     <button class="btn" id="todays-verse-btn" onclick="showVerse(verse)">📖 Today’s Verse</button>
-                    <button class="btn" onclick="showInspiration()">Tasks Today </button>
+                    <button class="btn" onclick="showInspiration()">🛠️ Build My Day </button>
                     
                 </ul>
                 
@@ -57,32 +57,99 @@
     
   </div>
 </div>
+            <section id="todo-page" style="display: none;">
+  <h2>📝 Your Daily Plan</h2>
+
+  <div class="input-section">
+    <input type="text" id="taskInput" placeholder="Enter your task here">
+    <button onclick="addTask()">Add Task</button>
+  </div>
+
+  <ul id="taskList"></ul>
+
+  <button onclick="goBackToFeatures()">⬅️ Back</button>
+</section>
+
 
 
 
         </main>
         <script>
-    function goToFeatures() {
-      document.getElementById('welcome').style.display = 'none';
-      document.getElementById('features').style.display = 'block';
+  function goToFeatures() {
+    document.getElementById('welcome').style.display = 'none';
+    document.getElementById('features').style.display = 'block';
+    document.getElementById('todo-page').style.display = 'none';
+  }
+
+  function showInspiration() {
+    document.getElementById('features').style.display = 'none';
+    document.getElementById('todo-page').style.display = 'block';
+  }
+
+  function goBackToFeatures() {
+    document.getElementById('todo-page').style.display = 'none';
+    document.getElementById('features').style.display = 'block';
+  }
+
+  function addTask() {
+    const taskInput = document.getElementById("taskInput");
+    const taskText = taskInput.value.trim();
+    if (taskText === "") return;
+
+    const taskList = document.getElementById("taskList");
+
+    const li = document.createElement("li");
+    li.innerHTML = `
+      <input type="checkbox" onchange="toggleDone(this)">
+      <span>${taskText}</span>
+      <button onclick="removeTask(this)">❌</button>
+    `;
+
+    taskList.appendChild(li);
+    taskInput.value = "";
+
+    saveTasks();
+  }
+
+  function toggleDone(checkbox) {
+    const taskItem = checkbox.parentElement;
+    if (checkbox.checked) {
+      taskItem.classList.add("completed");
+    } else {
+      taskItem.classList.remove("completed");
     }
+    saveTasks();
+  }
 
-    
+  function removeTask(button) {
+    button.parentElement.remove();
+    saveTasks();
+  }
 
-    function showInspiration() {
-      alert("Feature coming soon: Save your favorite quotes & thoughts ✨");
+  function saveTasks() {
+    const taskList = document.getElementById("taskList");
+    localStorage.setItem("tasks", taskList.innerHTML);
+  }
+
+  function loadTasks() {
+    const saved = localStorage.getItem("tasks");
+    if (saved) {
+      document.getElementById("taskList").innerHTML = saved;
     }
+  }
 
-    
-    function showVerse(verse) {
-  document.getElementById("bible-verse").innerText = verse;
-  document.getElementById("verse-box").style.display = "flex";
-  setTimeout(() => {
-    document.getElementById("verse-box").style.display = "none";
-  }, 10000); // hide after 5 seconds
-}
+  document.addEventListener("DOMContentLoaded", loadTasks);
 
-  </script>
+  function showVerse(verse) {
+    document.getElementById("bible-verse").innerText = verse;
+    document.getElementById("verse-box").style.display = "flex";
+    setTimeout(() => {
+      document.getElementById("verse-box").style.display = "none";
+    }, 10000);
+  }
+
+</script>
+
 
         <footer>
             <p>&copy; 2025 My Faith App. All rights reserved.</p>
