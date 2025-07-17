@@ -31,7 +31,7 @@
   color:burlywood;
   text-align: center;
   margin: 20px 0;
-  -webkit-text-stroke: 0.001px black;
+  -webkit-text-stroke: 0.2px black;
   animation: fadeIn 1.5s ease-out;
 }
 
