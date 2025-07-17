@@ -1,11 +1,10 @@
  body {
       font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(to bottom, #e0f7fa, #fce4ec);
-      display: flex;
+      
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      
+      
       margin: 0;
       background-image:url("jesus2.png");
       padding: 0;
