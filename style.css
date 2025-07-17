@@ -22,9 +22,17 @@
   color:burlywood;
   text-align: center;
   margin: 20px 0;
-  -webkit-text-stroke: 0.05px white;
-  animation: fadeIn 3.5s ease-out;
+  -webkit-text-stroke: 0.001px white;
+  animation: fadeIn 1.5s ease-out;
    }
+.plan{
+ font-family: "sans serif";
+  font-size: 5em;
+  color:burlywood;
+  text-align: center;
+  margin: 20px 0;
+  -webkit-text-stroke: 0.001px black;
+  animation: fadeIn 1.5s ease-out;
 
     .btn {
       background: burlywood;
