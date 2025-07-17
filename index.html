@@ -91,6 +91,7 @@
   function goBackToFeatures() {
     document.getElementById('todo-page').style.display = 'none';
     document.getElementById('features').style.display = 'block';
+    document.getElementById('main-header').style.display = 'block';
   }
 
   function addTask() {
@@ -104,7 +105,7 @@
     li.innerHTML = `
       <input type="checkbox" onchange="toggleDone(this)">
       <span>${taskText}</span>
-      <button onclick="removeTask(this)">❌</button>
+      <button onclick="removeTask(this)">Back</button>
     `;
 
     taskList.appendChild(li);
