@@ -28,10 +28,10 @@
 .plan{
  font-family: 'Sacramento', cursive;
   font-size: 5em;
-  color:burlywood;
+  color:black;
   text-align: center;
-  margin: 20px 0;
-  -webkit-text-stroke: 0.2px black;
+  margin-right:50px 0;
+  -webkit-text-stroke: 0.2px burlywood;
   animation: fadeIn 1.5s ease-out;
 }
 
