@@ -195,3 +195,45 @@ button{
   box-shadow: 0 0 20px rgba(150, 64, 64, 0.2);
   backdrop-filter: blur(6px);
 }
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.input-section button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+ul#taskList {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul#taskList li {
+  padding: 10px;
+  background: #f4f4f4;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+ul#taskList li.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
