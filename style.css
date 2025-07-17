@@ -22,7 +22,7 @@
   color:burlywood;
   text-align: center;
   margin: 20px 0;
-  -webkit-text-stroke: 0.01px white;
+  -webkit-text-stroke: 0.05px white;
   animation: fadeIn 3.5s ease-out;
    }
 
@@ -40,7 +40,7 @@
     }
 
     .btn:hover {
-      background:whitesmoke;
+      background:white;
     }
 
     footer {
