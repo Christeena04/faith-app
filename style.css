@@ -1,44 +1,38 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom, #e0f7fa, #fce4ec);
-  background-image: url("jesus2.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  margin: 0;
-  padding: 0;
-  display: block; /* remove flex centering to allow natural top alignment */
-}
-
+ body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #e0f7fa, #fce4ec);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-image:url("jesus2.png");
+      padding: 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed; /* optional */
+  
+    }
 
    h1{
     font-family: 'Great Vibes', cursive;
-  font-size: 5.5em;
+  font-size: 6em;
   color:burlywood;
   text-align: center;
   margin: 20px 0;
-  -webkit-text-stroke: 0.0002px white;
+  -webkit-text-stroke: 0.001px white;
   animation: fadeIn 1.5s ease-out;
    }
-
-
-.daily-heading {
-  font-family: 'Chewy', cursive;
-  font-size: 2.5rem;
-  color: burlywood;
-  -webkit-text-stroke: 1px white;
+.plan{
+ font-family: 'Sacramento', cursive;
+  font-size: 5em;
+  color:burlywood;
   text-align: center;
-  margin: 20px auto 10px;  /* Top margin pushes heading down slightly from top */
-}
-
-.todo-container {
-  max-width: 400px;
-  margin: 0 auto;        /* Centers container */
-  padding-bottom: 40px;  /* Adds space at bottom */
-}
-
-
+  margin: 20px 0;
+  -webkit-text-stroke: 0.001px black;
+  animation: fadeIn 1.5s ease-out;
 
     .btn {
       background: burlywood;
