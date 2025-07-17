@@ -18,13 +18,13 @@
     <body>
         <header>
             
-            <h1>My Faith✨</h1>
+            <h1> Faith Flow✨</h1>
         </header>
         <main>
             <section id="welcome">
                 <div class="welcome">
-                <h2>Welcome to My Faith App</h2>
-                <p class="container">Your daily source of inspiration and prayer.</p>
+                <h2>Welcome to My Faith Flow</h2>
+                
             </div>
             <div class="start">
              <button class="btn" onclick="goToFeatures()">Let's Start</button>
@@ -35,10 +35,10 @@
                 <div class="features">
                 <ul>
                     <button class="btn" id="todays-verse-btn" onclick="showVerse(verse)">📖 Today’s Verse</button>
-                    <button class="btn" onclick="showInspiration()">💬 Inspiration Board</button>
-                    <button class="btn" onclick="showPrayer()">🙏 Prayer List</button>
+                    <button class="btn" onclick="showInspiration()">Tasks Today </button>
+                    
                 </ul>
-                <p class="container">Explore our key features to enhance your spiritual journey</p>
+                
                 </div>
             </section>
             <!-- HTML -->
@@ -73,9 +73,7 @@
       alert("Feature coming soon: Save your favorite quotes & thoughts ✨");
     }
 
-    function showPrayer() {
-      alert("Feature coming soon: Add your prayer requests 🙏");
-    }
+    
     function showVerse(verse) {
   document.getElementById("bible-verse").innerText = verse;
   document.getElementById("verse-box").style.display = "flex";
