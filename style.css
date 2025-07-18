@@ -232,6 +232,11 @@ h2{
     width:300vh;
     background-image:url("jesus2.png");
     animation: fadeIn 1s ease-out;
+     background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed; /* optional */
+  
 }
 .container{
   font-family: 'Pacifico', cursive;
