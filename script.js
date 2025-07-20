@@ -37,7 +37,7 @@ const verses = [
   "Blessed are the pure in heart, for they shall see God. – Matthew 5:8",
   "Love never fails. – 1 Corinthians 13:8",
   "Rejoice in the Lord always. – Philippians 4:4",
-  "The Lord is close to the brokenhearted. – Psalm 34:18"
+  "The Lord is close to the brokenhearted. – Psalm 34:18",
    "He will cover you with His feathers. – Psalm 91:4",
    "The name of the Lord is a strong tower. – Proverbs 18:10",
      "The Lord is good, a refuge in times of trouble. – Nahum 1:7",
