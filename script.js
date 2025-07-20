@@ -21,10 +21,58 @@ const verses = [
   "But those who hope in the Lord will renew their strength. - Isaiah 40:31 ",
   "For we live by faith, not by sight. - 2 Corinthians 5:7",
  "I have been crucified with Christ and I no longer live, but Christ lives in me. - Galatians 2:20 ",
-  "Take delight in the Lord, and he will give you the desires of your heart. - Psalm 37:4 "
-  
-  
-  
+  "Take delight in the Lord, and he will give you the desires of your heart. - Psalm 37:4 ",
+  "Be still, and know that I am God. – Psalm 46:10",
+  "The Lord is my shepherd; I shall not want. – Psalm 23:1",
+  "For I know the plans I have for you. – Jeremiah 29:11",
+  "The Lord will fight for you; you need only to be still. – Exodus 14:14",
+  "When I am afraid, I put my trust in you. – Psalm 56:3",
+  "The Lord is my light and my salvation. – Psalm 27:1",
+  "My grace is sufficient for you. – 2 Corinthians 12:9",
+  "With God all things are possible. – Matthew 19:26",
+  "Let all that you do be done in love. – 1 Corinthians 16:14",
+  "Do not be conformed to this world. – Romans 12:2",
+  "Even though I walk through the valley, I will fear no evil. – Psalm 23:4",
+  "He heals the brokenhearted. – Psalm 147:3",
+  "Blessed are the pure in heart, for they shall see God. – Matthew 5:8",
+  "Love never fails. – 1 Corinthians 13:8",
+  "Rejoice in the Lord always. – Philippians 4:4",
+  "The Lord is close to the brokenhearted. – Psalm 34:18"
+   "He will cover you with His feathers. – Psalm 91:4",
+   "The name of the Lord is a strong tower. – Proverbs 18:10",
+     "The Lord is good, a refuge in times of trouble. – Nahum 1:7",
+
+"Do not fear, for I am with you. – Isaiah 41:10",
+
+"The Lord will guide you always. – Isaiah 58:11",
+
+"Your word is a lamp to my feet. – Psalm 119:105",
+
+"In quietness and trust is your strength. – Isaiah 30:15",
+
+"He gives strength to the weary. – Isaiah 40:29",
+
+"The Lord is my portion, says my soul. – Lamentations 3:24",
+
+"Blessed are those who mourn, for they will be comforted. – Matthew 5:4",
+
+"Seek first His kingdom. – Matthew 6:33",
+
+"You are the light of the world. – Matthew 5:14",
+
+"Peace I leave with you; My peace I give you. – John 14:27",
+
+"Perfect love drives out fear. – 1 John 4:18",
+
+"Let your light shine before others. – Matthew 5:16",
+
+"The Lord is gracious and compassionate. – Psalm 145:8",
+
+"Clothe yourselves with compassion and kindness. – Colossians 3:12",
+
+"Be joyful in hope, patient in affliction. – Romans 12:12",
+
+"He who promised is faithful. – Hebrews 10:23"
 ];
 
 // When "Today's Verse" button is clicked → open the verse box
