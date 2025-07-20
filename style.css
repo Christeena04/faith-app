@@ -41,7 +41,7 @@
           
             position: sticky;
             top: 0;
-            height:0;
+            height:90vh;
              z-index: 10;
              backdrop-filter: blur(5px);
              text-align: center;
