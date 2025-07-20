@@ -74,7 +74,12 @@ const verses = [
 
 "He who promised is faithful. – Hebrews 10:23"
 ];
-
+document.addEventListener("DOMContentLoaded", () => {
+  loadTasks();
+  document.getElementById("features").style.display = "none";
+  document.getElementById("todo-page").style.display = "none";
+  document.getElementById("verse-box").style.display = "none";
+});
 // When "Today's Verse" button is clicked → open the verse box
 document.getElementById("todays-verse-btn").addEventListener("click", () => {
   document.getElementById("verse-box").style.display = "flex";
@@ -83,15 +88,19 @@ document.getElementById("todays-verse-btn").addEventListener("click", () => {
 
 // Show a random verse when the inner button is clicked
 function showRandomVerse() {
+  const verseEl = document.getElementById("bible-verse"); // add this line
   const randomVerse = verses[Math.floor(Math.random() * verses.length)];
-  document.getElementById("bible-verse").innerText = randomVerse;
+  verseEl.innerText = randomVerse;
+
   const audio = document.getElementById("verse-sound");
-  audio.currentTime = 0;  // restart if already playing
+  audio.currentTime = 0;
   audio.play();
+
   verseEl.style.animation = 'none';
   void verseEl.offsetWidth;
   verseEl.style.animation = 'glowInVerse 1.2s ease-out forwards';
 }
+
 
 // Close popup
 function closeVerse() {
