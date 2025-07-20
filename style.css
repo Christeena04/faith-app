@@ -447,10 +447,19 @@ ul#taskList li.completed span {
     text-align: center;
     display: block;
   }
-.start{
-        justify-content: center;
-        align-items: center;
+#welcome .start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
+
+#welcome .btn {
+  width: 80%;
+  max-width: 300px;
+  font-size: 1.2em;
+}
+
   .input-section {
     flex-direction: column;
     align-items: stretch;
