@@ -74,6 +74,84 @@ const verses = [
 
 "He who promised is faithful. – Hebrews 10:23"
 ];
+
+  function goToFeatures() {
+    document.getElementById('welcome').style.display = 'none';
+    document.getElementById('features').style.display = 'block';
+    document.getElementById('todo-page').style.display = 'none';
+  }
+
+  function showInspiration() {
+    document.getElementById('features').style.display = 'none';
+    document.getElementById('todo-page').style.display = 'block';
+    document.getElementById('main-header').style.display = 'none';
+  }
+
+  function goBackToFeatures() {
+    document.getElementById('todo-page').style.display = 'none';
+    document.getElementById('features').style.display = 'block';
+    document.getElementById('main-header').style.display = 'block';
+  }
+
+  function addTask() {
+    const taskInput = document.getElementById("taskInput");
+    const taskText = taskInput.value.trim();
+    if (taskText === "") return;
+
+    const taskList = document.getElementById("taskList");
+
+    const li = document.createElement("li");
+li.innerHTML = `
+  <input type="checkbox" onchange="toggleDone(this)">
+  <span>${taskText}</span>
+  <button onclick="removeTask(this)">🗑️</button>
+`;
+
+
+    taskList.appendChild(li);
+    taskInput.value = "";
+
+    saveTasks();
+  }
+
+  function toggleDone(checkbox) {
+    const taskItem = checkbox.parentElement;
+    if (checkbox.checked) {
+      taskItem.classList.add("completed");
+    } else {
+      taskItem.classList.remove("completed");
+    }
+    saveTasks();
+  }
+
+  function removeTask(button) {
+    button.parentElement.remove();
+    saveTasks();
+  }
+
+  function saveTasks() {
+    const taskList = document.getElementById("taskList");
+    localStorage.setItem("tasks", taskList.innerHTML);
+  }
+
+  function loadTasks() {
+    const saved = localStorage.getItem("tasks");
+    if (saved) {
+      document.getElementById("taskList").innerHTML = saved;
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", loadTasks);
+
+  function showVerse(verse) {
+    document.getElementById("bible-verse").innerText = verse;
+    document.getElementById("verse-box").style.display = "flex";
+    setTimeout(() => {
+      document.getElementById("verse-box").style.display = "none";
+    }, 10000);
+  }
+
+
 document.addEventListener("DOMContentLoaded", () => {
   loadTasks();
   document.getElementById("features").style.display = "none";
