@@ -238,13 +238,14 @@ h2{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  padding-top: 120px;  /* ⬅️ creates space below the fixed header */
-  padding-bottom: 50px;
+  justify-content: center;
+  padding:20px
+ height:100vh;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
   animation: fadeIn 1s ease-out;
+ overflow:hidden;
 }
 
 .container{
