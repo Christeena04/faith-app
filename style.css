@@ -13,6 +13,7 @@
       background-size: cover;
       background-position: center;
       background-attachment: fixed; /* optional */
+      overflow-y:auto;
   
     }
 
@@ -223,18 +224,19 @@ h2{
     margin-top: 180px;
     animation: fadeIn 1.5s ease-out;
 }
-.features{
-   display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: 100px;
-    padding: 20px;
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    animation: fadeIn 1s ease-out;
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 120px;  /* ⬅️ creates space below the fixed header */
+  padding-bottom: 50px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  animation: fadeIn 1s ease-out;
 }
+
 .container{
   font-family: 'Pacifico', cursive;
     font-size: 1.5em;
