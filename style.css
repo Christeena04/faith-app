@@ -425,6 +425,10 @@ ul#taskList li.completed span {
   border-radius: 4px;
 }
 @media screen and (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
   h1 {
     font-size: 2.5em;
   }
@@ -433,9 +437,14 @@ ul#taskList li.completed span {
     font-size: 3rem;
   }
 
-  .btn {
-    padding: 10px 20px;
-    font-size: 1.2em;
+  .btn, .add-btn, .back-btn {
+    width: 100%;
+    max-width: 280px;
+    padding: 12px 16px;
+    font-size: 1rem;
+    margin: 10px auto;
+    text-align: center;
+    display: block;
   }
 
   .input-section {
@@ -448,15 +457,14 @@ ul#taskList li.completed span {
     margin-bottom: 10px;
   }
 
-  .add-btn {
-    width: 100%;
-  }
-
-  .features,
-  .task-container {
+  .features, .task-container {
     width: 100%;
     margin: 0 auto;
+    overflow: hidden;
   }
+
+ 
+  
 
   .verse-content {
     width: 90%;
@@ -469,4 +477,3 @@ ul#taskList li.completed span {
     top: 10px;
   }
 }
-
