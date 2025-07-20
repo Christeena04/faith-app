@@ -35,6 +35,10 @@
   overflow-y: auto;
  box-sizing:border-box;
 }
+.start{
+        justify-content: center;
+        align-items: center;
+}
 
 
         .todo-header {
