@@ -39,9 +39,9 @@
 
         .todo-header {
           
-            position: fixed;
+            position: sticky;
             top: 0;
-             z-index: 5;
+             z-index:10;
              
              text-align: center;
              padding: 20px 0;
