@@ -11,13 +11,17 @@ const verses = [
   "Cast all your anxiety on him because he cares for you. - 1 Peter 5:7",
    "Trust in the Lord with all your heart and lean not on your own understanding. - Proverbs 3:5",
     "Come to me, all you who are weary and burdened, and I will give you rest. - Matthew 11:28",
-   "God is within her, she will not fall. - Psalm 46:5",
  "For I know the plans I have for you, plans to prosper you and not to harm you, plans to give you hope and a future. - Jeremiah 29:11",
-  "I can do all this through him who gives me strength. - Philippians 4:13",
-  "The Lord is my shepherd, I lack nothing. - Psalm 23:1",
-  "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life. - John 3:16",
-  "Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go. - Joshua 1:9",
- "The joy of the Lord is your strength. - Nehemiah 8:10"
+  "And we know that in all things God works for the good of those who love him. - Romans 8:28",
+  "So do not fear, for I am with you; do not be dismayed, for I am your God. - Isaiah 41:10 ",
+ "The name of the Lord is a fortified tower; the righteous run to it and are safe. - Proverbs 18:10 ",
+ "May the God of hope fill you with all joy and peace as you trust in him. - Romans 15:13 ",
+ "Your word is a lamp for my feet, a light on my path. - Psalm 119:105 ",
+ "But seek first his kingdom and his righteousness, and all these things will be given to you as well. - Matthew 6:33 ",
+  "But those who hope in the Lord will renew their strength. - Isaiah 40:31 ",
+  "For we live by faith, not by sight. - 2 Corinthians 5:7",
+ "I have been crucified with Christ and I no longer live, but Christ lives in me. - Galatians 2:20 ",
+  "Take delight in the Lord, and he will give you the desires of your heart. - Psalm 37:4 "
   
   
   
