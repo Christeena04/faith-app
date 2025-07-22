@@ -466,12 +466,12 @@ ul#taskList li.completed span {
   }
 
   #taskInput {
-    width: 100%;
+    width: 200%;
     margin-bottom: 10px;
   }
 
   .features, .task-container {
-    width: 100%;
+    width: 200%;
     margin: 0 auto;
     overflow: hidden;
   }
